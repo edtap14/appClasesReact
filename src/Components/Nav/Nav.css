@@ -1,0 +1,19 @@
+.divNav{
+    height: 100px;
+    
+}
+.links{
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: aqua;
+}
+
+li{
+    font-size: 20px;
+    font-weight: 800;
+    font-family: 'Courier New', Courier, monospace;
+    text-decoration: none;
+    list-style: none;
+}
