@@ -1,4 +1,7 @@
 body{
     padding: 0;
     margin: 0;
+    position: relative;
+    margin-bottom: 3em;
+    min-height: 100vh;
 }

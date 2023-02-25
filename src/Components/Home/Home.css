@@ -1,0 +1,35 @@
+.Home {
+    height:90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    background-color: rgb(35, 35, 35);
+    color: darkorange;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+.h1Home{
+ border: solid 1px orange;
+ border-radius: 10px;
+ padding: 30px 30px;
+}
+
+.h1Home:hover{
+border-color: aqua;
+color:aqua;
+}
+
+.pHome{
+    border: solid 1px orange;
+ border-radius: 10px;
+    padding: 30px 30px;
+
+}
+
+.pHome:hover{
+    border-color: aqua;
+color:aqua;
+}

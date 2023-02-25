@@ -1,19 +1,24 @@
-import { useState } from 'react';
+// import { useState } from 'react';
 import './App.css';
 import { Route, Routes } from 'react-router-dom';
 import { Nav } from './Components/Nav/Nav';
+import { Footer } from './Components/Footer/Footer';
+import { Home } from './Components/Home/Home'
+import { Productos } from './Components/Productos/Productos';
+import { Usuarios } from './Components/Usuarios/Usuarios'
+import { Error } from './Components/404/Error'
 
 function App() {
 	return (
 		<div>
 			<Nav />
 			<Routes>
-				<Route path='/' element={<p>Primer componente</p>} />
-				<Route path='/productos' element={<p>Productos</p>} />
-				<Route path='/usuarios' element={<p>Usuarios</p>} />
-				<Route path='/*' element={<p>Pagina no encontrada</p>} />
+				<Route path='/' element={<Home />} />
+				<Route path='/productos' element={<Productos />} />
+				<Route path='/usuarios' element={<Usuarios/>} />
+				<Route path='/*' element={<Error />} />
 			</Routes>
-			<p>Footer</p>
+			<Footer />
 		</div>
 	);
 }

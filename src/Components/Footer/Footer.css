@@ -1,0 +1,14 @@
+.Footer{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(35, 35, 35);
+    color: antiquewhite;
+    position:absolute;
+    bottom: 1em;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: 1em;
+}

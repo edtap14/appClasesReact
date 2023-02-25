@@ -1,0 +1,27 @@
+.Error {
+    height:90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    background-color: rgb(35, 35, 35);
+    color: darkorange;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+.h3Error{
+}
+
+.h3Error:hover{
+color:aqua;
+}
+
+.pError{
+
+}
+
+.pError:hover{
+color:aqua;
+}
