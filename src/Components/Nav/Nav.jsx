@@ -4,11 +4,15 @@ import './Nav.css';
 export const Nav = () => {
 	return (
 		<div className='divNav'>
-			<div className='links'>
-				<li>Home</li>
-				<li>Productos</li>
-				<li>Usuarios</li>
-			</div>
+			<Link className='links' to='/'>
+				Home
+			</Link>
+			<Link className='links' to='/productos'>
+				Productos
+			</Link>
+			<Link className='links' to='/Usuarios'>
+				Usuarios
+			</Link>
 		</div>
 	);
 };
