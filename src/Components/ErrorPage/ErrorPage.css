@@ -1,0 +1,8 @@
+.errorpage {
+    border: 1px solid black;
+    text-align: center;
+    font-size: 70px;
+    font-family: 'Arial';
+    font-weight: 200px;
+    margin: 20px;
+}
