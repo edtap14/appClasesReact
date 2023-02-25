@@ -3,10 +3,10 @@ import './App.css';
 import { Route, Routes } from 'react-router-dom';
 import { Nav } from './Components/Nav/Nav';
 import { Footer } from './Components/Footer/Footer';
-import { Home } from './Components/Home/Home'
-import { Productos } from './Components/Productos/Productos';
-import { Usuarios } from './Components/Usuarios/Usuarios'
-import { Error } from './Components/404/Error'
+import { Home } from './Views/Home/Home'
+import { Productos } from './Views/Productos/Productos';
+import { Usuarios } from './Views/Usuarios/Usuarios'
+import { Error } from './Views/404/Error'
 
 function App() {
 	return (
