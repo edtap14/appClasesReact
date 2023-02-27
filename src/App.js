@@ -7,13 +7,22 @@ import PaginaNotFound from './views/PaginaNotFound/PaginaNotFound';
 import Productos from './views/Productos/Productos';
 
 function App() {
+	const [detailId, setDetailId] = useState(0);
+
 	return (
 		<div>
 			<Nav />
 			<Routes>
 				<Route path='/' element={<Home />} />
-				<Route path='/productos' element={<Productos />} />
+				<Route
+					path='/productos'
+					element={<Productos setDetailId={setDetailId} />}
+				/>
 				<Route path='/usuarios' element={<p>Usuarios</p>} />
+				<Route
+					path='/producto/:id'
+					element={<p>este producto tiene como id: {detailId}</p>}
+				/>
 				<Route path='/*' element={<PaginaNotFound />} />
 			</Routes>
 			<p>Footer</p>
