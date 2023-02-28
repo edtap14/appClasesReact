@@ -30,7 +30,7 @@ export const Usuarios = () => {
 
   console.log("Resultado final", users);
 
-  const usuario = (users) => {
+  const usuario = (setUsers) => {
     return {
       id: 0,
       firstName: "",
@@ -46,7 +46,7 @@ export const Usuarios = () => {
     <div className="Usuarios">
       <h1 className="h3Usuarios">Mi perfil</h1>
       <li className="pUsuarios">
-        Aquí deberían ir los datos del usuario (componente)
+        Aquí deberían ir los datos del usuario {usuario}
       </li>
     </div>
   );
