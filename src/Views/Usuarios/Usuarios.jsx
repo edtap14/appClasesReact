@@ -3,11 +3,33 @@ import { useEffect, useState } from 'react';
 
 export const Usuarios = () => {
 
-    const [products, setProducts] = useState({
-        id: null,
-        
-
+    const [users, setUsers] = useState({
+        id: 0,
+        firstName:'',
+        lastName:'',
+        maidenName:'',
+        age:0,
+        gender:'',
+        image:'',      
     });
+
+    console.log('Inicial', users)
+
+    const getUsers = () => {
+        try {
+            fetch('https://dummyjson.com/users')
+            .then((res) => res.json())
+            .then((data) => setUsers(data))
+        }catch (error) {
+            console.log(error)
+        }
+    }
+
+    useEffect(() => {
+        getUsers();
+      }, []);
+
+      console.log('Resultado final',users)
 
     return (
         <div className="Usuarios">
