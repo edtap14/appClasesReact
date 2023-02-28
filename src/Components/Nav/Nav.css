@@ -1,19 +1,22 @@
 .divNav{
-    height: 100px;
+    height: 150px;
+    border-bottom: 5px solid green;
     
 }
 .links{
-    height: 100px;
+    height: 150px;
     display: flex;
     justify-content: space-around;
     align-items: center;
     background-color: #90619e;
 }
 
-li{
-    font-size: 20px;
-    font-weight: 800;
-    font-family: 'Courier New', Courier, monospace;
-    text-decoration: none;
-    list-style: none;
+.Link {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    font-size: 2em
+}
+
+.Link:hover{
+    color: rgb(170, 236, 170);
 }

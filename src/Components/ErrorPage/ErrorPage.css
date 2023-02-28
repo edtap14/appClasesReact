@@ -5,4 +5,5 @@
     font-family: 'Arial';
     font-weight: 200px;
     margin: 20px;
+    flex-direction: column;
 }
