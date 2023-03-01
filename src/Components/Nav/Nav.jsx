@@ -6,7 +6,7 @@ export const Nav = () => {
 	return (
 		<div className='divNav'>
 			<div className='links'>
-				<li><Link to={'/Home'} className='Link'>Home</Link></li>
+				<li><Link to={'/'} className='Link'>Home</Link></li>
 				<Link to={'/productos'} className='Link'>Productos</Link>
 				<Link to={'/usuario'} className='Link'>Usuarios</Link>
 				
