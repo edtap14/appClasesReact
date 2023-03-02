@@ -1,10 +1,14 @@
 import './Productos.css';
 import { url } from '../../Varibles/variables';
 import { useEffect, useState } from 'react';
+import { Producto } from '../../Components/Producto/Producto';
 
 export const Productos = () => {
 	const [products, setProducts] = useState({
-		limit: 0,
+		limit: {
+			cantidad:0,
+			precio: 0
+		},
 		products: [],
 		skip: 0,
 		total: 0,
@@ -24,14 +28,38 @@ export const Productos = () => {
 		getProductos();
 	}, []);
 
-	console.log('Resultado final:', products);
+	console.log(products?.products[0]);
 
 	return (
 		<div className='Productos'>
-			<h1 className='h3Productos'>Lista de productos</h1>
-			<li className='pProductos'>
-				Aquí debería ir un producto (componente)
-			</li>
+			<div>
+				{/* {
+					products?.products?.map( (products) => {
+						
+						return(
+							<div key={products.id}>
+								<p>Marca: {products?.brand}</p>
+								<p>Categoria: {products?.category}</p>
+								<p>precio: {products?.price}</p>
+							</div>
+						)
+					})
+				} */}
+				{
+					products?.products?.map(chuchita => {
+						return(
+							<Producto
+								key={chuchita.id}
+								id={chuchita.id}
+								categoria={chuchita?.category}
+								precio={chuchita?.price}
+								marca={chuchita?.brand}
+							/>
+						)
+					})
+				}
+			</div>
 		</div>
 	);
 };
+
