@@ -1,5 +1,5 @@
 import React from 'react'
-import style from './Card.css'
+import './Card.css'
 
 const Card = ({ 
     title,
@@ -14,17 +14,16 @@ const Card = ({
 }) => {  
 
   return (
-    <div className={style.divCard}>
-        <h6>
-            Product: <span>{title}</span>
-            Description: <span>{description}</span>
-            Category: <span>{category}</span>
-            DiscountPercentage: <span>{discountPercentage}</span>
-            images: <span>{images}</span>
-            price: <span>{price}</span>
-            rating: <span>{rating}</span>
-            stock: <span>{stock}</span>
-        </h6>
+    <div className='divCard'>
+        
+            <h1>Product: <span>{title}</span></h1>
+            <p>Description: <span>{description}</span></p>
+            <p>Category: <span>{category}</span></p>
+            <p>DiscountPercentage: <span>{discountPercentage}</span></p>
+            <p>price: <span>{price}</span></p>
+            <p>rating: <span>{rating}</span></p>
+            <p>stock: <span>{stock}</span></p>
+        
             <img src={thumbnail} />
     </div>
   )
