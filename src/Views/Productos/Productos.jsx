@@ -5,13 +5,13 @@ import Producto from '../../Components/Producto/Producto';
 
 
 export const Productos = () => {
-    const [productos, setProductos] = useState()
+    const [productos, setProductos] = useState([])
    
     const getProductos = () => {
         try {
             fetch('https://dummyjson.com/products') // Hace llamadas remotas hacia un lugar, una promesa es una resolucion de algo
             .then(response => response.json())
-            .then((data) => setProductos(data.products));
+            .then((data) => setProductos(data?.products));
         } catch (error) {
             console.log(error)
         }
@@ -21,13 +21,13 @@ export const Productos = () => {
         getProductos();
     }, []); // listener algo que se observa y se ejecuta cada que cambie algo
 
-    
+    console.log(productos)
     
     return(
         <div className='Productos'>
             <div>
-                {/*
-                    products?.products?.map( (products, index) => {
+                {
+                    productos?.map( (products, index) => {
                         console.log(products)
                         return(
                             <div key={products.id}>
@@ -37,9 +37,9 @@ export const Productos = () => {
                             </div>
                         )
                     })
-                */}
-                {
-                    productos?.productos?.map(chuchita => {
+                }
+                {/* {
+                    productos?.map(chuchita => {
                         return(
                             <Producto
                             precio={chuchita.price}
@@ -48,7 +48,7 @@ export const Productos = () => {
                             />
                         )
                     })
-                }
+                } */}
             </div>
 
         </div> 
