@@ -30,23 +30,34 @@ export const Usuarios = () => {
 
   console.log("Resultado final", users);
 
-  const usuario = (setUsers) => {
-    return {
-      id: 0,
-      firstName: "",
-      lastName: "",
-      maidenName: "",
-      age: 0,
-      gender: "",
-      image: "",
-    };
+  const usuario = ({
+    id,
+    firstName,
+    lastName,
+    maidenName,
+    age,
+    gender,
+    image,
+  }) => {
+    return <div>
+      {users.map((e, index) =>  {
+        const {id, firstName, lastName, maidenName, age, gender, image } = e;
+      }
+      )}
+      <div>
+        
+      </div>
+        <div>
+
+        </div>
+    </div>;
   };
 
   return (
     <div className="Usuarios">
       <h1 className="h3Usuarios">Mi perfil</h1>
       <li className="pUsuarios">
-        Aquí deberían ir los datos del usuario {usuario}
+        Aquí deberían ir los datos del usuario {usuario.id}
       </li>
     </div>
   );
