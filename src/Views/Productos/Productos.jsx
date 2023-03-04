@@ -38,17 +38,7 @@ export const Productos = () => {
                         )
                     })
                 }
-                {/* {
-                    productos?.map(chuchita => {
-                        return(
-                            <Producto
-                            precio={chuchita.price}
-                            marca={chuchita.brand}
-                            categoria={chuchita.category}
-                            />
-                        )
-                    })
-                } */}
+            
             </div>
 
         </div> 

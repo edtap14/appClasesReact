@@ -2,10 +2,10 @@ import { useState } from 'react';
 import './App.css';
 import { Route, Routes } from 'react-router-dom';
 import { Nav } from './Components/Nav/Nav';
+import  ErrorPage from './Components/ErrorPage/ErrorPage.jsx';
 import { Home } from './Views/Home/Home';
 import { Productos } from './Views/Productos/Productos';
-import  Usuarios  from './Views/Usuarios/Usuarios';
-import  ErrorPage from './Components/ErrorPage/ErrorPage.jsx';
+import { Usuarios }  from './Views/Usuarios/Usuarios';
 
 
 function App() {

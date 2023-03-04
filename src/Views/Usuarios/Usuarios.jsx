@@ -1,11 +1,41 @@
-import React from 'react';
+import React, {useState, useEffect } from 'react';
 import './Usuarios.css';
 
-const Usuarios = () => {
+export const Usuarios = () => {
+    const [usuarios, setUsuarios] = useState([])
+
+    const getUsuarios = () => {
+      try {
+        fetch('https://dummyjson.com/users')
+        .then(response => response.json())
+        .then((data) => setUsuarios(data?.users));
+      } catch (error) {
+        console.log(error)
+      }
+    };
+
+    useEffect(() => {
+      getUsuarios();
+    }, []);
+
+    console.log(usuarios)
+
   return (
     <div className='Usuarios'>
-        <h1 className='Usuarios'> Mi perfil</h1>
-        <li className='pUsuarios'>Datos Usuario</li>
+        <div>
+            {
+              usuarios?.map( (users, index) => {
+                console.log(users)
+                return(
+                  <div key={users.id}>
+                      <p>Nombre: {users.firstName}</p>
+                      <p>Apellido: {users.lastName}</p>
+                      <p>Edad: {users.age}</p>
+                  </div>
+                )
+              })
+            }
+        </div> 
     </div>
   )
 }
