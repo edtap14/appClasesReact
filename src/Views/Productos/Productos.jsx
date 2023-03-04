@@ -1,16 +1,17 @@
 import "./Productos.css";
 // import { url } from "../../Variables/variables";
 import { useEffect, useState } from "react";
+import { Producto } from "../../Components/Producto/Producto";
 
 export const Productos = () => {
   const [products, setProducts] = useState({
     limit: 0,
-    products: [],
     skip: 0,
     total: 0,
+    products: [],
   });
 
-  console.log('Inicial',products)
+  // console.log('Inicial',products)
 
   const getProductos = () => {
     try {
@@ -26,12 +27,31 @@ export const Productos = () => {
     getProductos();
   }, []);
 
-  console.log('Resultado final',products)
+  // console.log('Resultado final',products)
+  // console.log(products.products[0].brand);
 
   return (
-    <div className="Productos">
-      <h1 className="h3Productos">Lista de productos</h1>
-      <li className="pProductos">Aquí debería ir un producto (componente)</li>
+    <div>
+        <div className="Productos">
+          {products?.products?.map((elProducto) => {
+            // console.log(elProducto);
+            return (
+              <Producto
+                key={elProducto.id}
+                thumbnail={elProducto.thumbnail}
+                images={elProducto.images}
+                id={elProducto.id}
+                title={elProducto.title}
+                brand={elProducto.brand}
+                description={elProducto.description}
+                rating={elProducto.rating}
+                price={elProducto.price}
+                category={elProducto.category}
+                stock={elProducto.stock}
+              />
+            );
+          })}
+        </div>
     </div>
   );
 };

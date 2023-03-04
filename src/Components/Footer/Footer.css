@@ -6,7 +6,7 @@
     align-items: center;
     background-color: rgb(35, 35, 35);
     color: antiquewhite;
-    position:absolute;
+    /* position:absolute; */
     bottom: 1em;
     font-family: 'Courier New', Courier, monospace;
     font-weight: bold;

@@ -3,16 +3,13 @@ import { useEffect, useState } from "react";
 
 export const Usuarios = () => {
   const [users, setUsers] = useState({
-    id: 0,
-    firstName: "",
-    lastName: "",
-    maidenName: "",
-    age: 0,
-    gender: "",
-    image: "",
+    limit: 0,
+    skip: 0,
+    total: 0,
+    users: [],
   });
 
-  console.log("Inicial", users);
+  // console.log("Inicial", users);
 
   const getUsers = () => {
     try {
@@ -28,36 +25,14 @@ export const Usuarios = () => {
     getUsers();
   }, []);
 
-  console.log("Resultado final", users);
-
-  const usuario = ({
-    id,
-    firstName,
-    lastName,
-    maidenName,
-    age,
-    gender,
-    image,
-  }) => {
-    return <div>
-      {users.map((e, index) =>  {
-        const {id, firstName, lastName, maidenName, age, gender, image } = e;
-      }
-      )}
-      <div>
-        
-      </div>
-        <div>
-
-        </div>
-    </div>;
-  };
+  // console.log("Resultado final", users);
+  console.log(users.users);
 
   return (
     <div className="Usuarios">
       <h1 className="h3Usuarios">Mi perfil</h1>
       <li className="pUsuarios">
-        Aquí deberían ir los datos del usuario {usuario.id}
+        Aquí deberían ir los datos del usuario {users.users}
       </li>
     </div>
   );
