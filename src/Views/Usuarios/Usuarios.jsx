@@ -1,5 +1,6 @@
 import "./Usuarios.css";
 import { useEffect, useState } from "react";
+import { Usuario } from "../../Components/Usuario/Usuario"
 
 export const Usuarios = () => {
   const [users, setUsers] = useState({
@@ -30,10 +31,16 @@ export const Usuarios = () => {
 
   return (
     <div className="Usuarios">
-      <h1 className="h3Usuarios">Mi perfil</h1>
-      <li className="pUsuarios">
-        Aquí deberían ir los datos del usuario {users.users}
-      </li>
+      {users?.users?.map((elUsuario) => {
+        console.log(elUsuario);
+        return (
+          <Usuario
+            age={elUsuario.age}
+            birthDate={elUsuario.birthDate}
+            firstName={elUsuario.firstName}
+          />
+        );
+      })}
     </div>
   );
 };
