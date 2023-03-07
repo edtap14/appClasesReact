@@ -1,17 +1,17 @@
 body {
-    background-color: rgb(32, 32, 32);
-    background-image: url("../../img/doodle2.png");
-    background-repeat: repeat;
-    height: 200px;
-    background-origin: content-box padding-box;
-    background-position: 50% 50%;
-    background-size: cover;
+  background-color: #1D1D1D;
+  background-image: url("../../img/doodle2.png");
+  background-repeat: repeat;
+  height: 200px;
+  background-origin: content-box padding-box;
+  background-position: 50% 50%;
+  background-size: cover;
 }
 
 .producto {
-  color: #ece5dd;
-  background-color:#075e54ee;
-  border: 1px solid #25d366;
+  color: #FFFFFF;
+  background-color: #1D1D1D;
+  border: 1px solid #E3FF73;
   width: 350px;
   height: auto;
   display: flex;
@@ -19,31 +19,31 @@ body {
   justify-content: center;
   align-items: center;
   border-radius: 10px;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  box-shadow: 8px 5px 5px 2px rgb(24, 24, 24); 
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  box-shadow: 8px 5px 5px 2px rgb(24, 24, 24);
   text-shadow: 2px 2px 5px black;
   cursor: pointer;
-  margin: 20px 20px ;
+  margin: 20px 20px;
 }
 
-.producto:hover{
-  background-color:#075e54;
+.producto:hover {
+  background-color: #7F7F80;
 }
 
-p{
+p {
   color: #ece5dd;
   text-align: center;
   margin: 5px;
   padding: 1px;
 }
 
-
-
 .thumbnail {
   height: 100px;
+  margin: 20px;
 }
 
-.boton{
+.boton {
   cursor: pointer;
   font-size: 1em;
   color: #ece5dd;
@@ -53,12 +53,12 @@ p{
   height: 50px;
   margin: 20px;
   padding: 15px;
-  border-radius:20px;
+  border-radius: 20px;
   box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.5);
   -webkit-box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.5);
   -moz-box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.5);
   transition: all 0.3s ease;
-    background-color: #075e54ee;
+  background-color: #075e54ee;
 }
 
 .boton:hover {
@@ -71,13 +71,13 @@ p{
   text-shadow: 2px 2px 4px #0000008f;
 }
 
-.carousel{
+.carousel {
   margin: 10px;
   padding: 15px;
 }
 
-img{
+img {
   margin: 1px;
   padding: 1px;
-  width: 40%; 
+  width: 40%;
 }

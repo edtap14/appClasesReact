@@ -32,7 +32,7 @@ export const Productos = () => {
 
   return (
     <div>
-        <div className="Productos">
+        <div className="productos">
           {products?.products?.map((elProducto) => {
             // console.log(elProducto);
             return (
@@ -48,6 +48,7 @@ export const Productos = () => {
                 price={elProducto.price}
                 category={elProducto.category}
                 stock={elProducto.stock}
+                // setId={setId}
               />
             );
           })}

@@ -4,32 +4,32 @@
     flex-direction: column;
     justify-content: center;
     align-items:center;
-    background-color: rgb(35, 35, 35);
-    color: darkorange;
+    background-color: #1D1D1D;
+    color: #E3FF73;
     font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
     font-size: 1em;
 }
 
 .h1Home{
- border: solid 1px orange;
+ border: solid 1px #E3FF73;
  border-radius: 10px;
  padding: 30px 30px;
 }
 
 .h1Home:hover{
-border-color: aqua;
-color:aqua;
+border-color: #FFFFFF;
+color:#FFFFFF;
 }
 
 .pHome{
-    border: solid 1px orange;
+    border: solid 1px #E3FF73;
  border-radius: 10px;
     padding: 30px 30px;
-
+color:#7F7F80;
 }
 
 .pHome:hover{
-    border-color: aqua;
-color:aqua;
+    border-color: #FFFFFF;
+color:#FFFFFF;
 }

@@ -9,7 +9,7 @@ export const Usuario = ({ age, birthDate, firstName }) => {
         <p>Edad: {age}</p>
         <p>Cumpleaños {birthDate}</p>
         <p>Nombre: {firstName}</p>
-        <button className="boton">Botón que va a la view del producto</button>
+        <button className="boton">Botón que va a la view del usuario</button>
       </div>
     </div>
   );

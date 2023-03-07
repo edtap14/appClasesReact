@@ -5,7 +5,7 @@
     justify-content: center;
     align-items:center;
     background-color: rgb(35, 35, 35);
-    color: darkorange;
+    color: #E3FF73;
     font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
     font-size: 1em;
@@ -15,13 +15,14 @@
 }
 
 .h3Error:hover{
-color:aqua;
+color:#FFFFFF;
 }
 
 .pError{
+    color:#7F7F80;
 
 }
 
 .pError:hover{
-color:aqua;
+color:#FFFFFF;
 }

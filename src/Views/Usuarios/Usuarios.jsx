@@ -35,6 +35,7 @@ export const Usuarios = () => {
         console.log(elUsuario);
         return (
           <Usuario
+          key={elUsuario.id}
             age={elUsuario.age}
             birthDate={elUsuario.birthDate}
             firstName={elUsuario.firstName}
