@@ -13,6 +13,9 @@ import { useState } from 'react';
 function App() {
 	const [id, setId] = useState(null)
 
+	console.log(id)
+
+
 	return (
 		<div>
 			<Nav />
